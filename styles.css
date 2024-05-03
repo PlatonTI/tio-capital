@@ -1,18 +1,36 @@
-.center {
-  text-align: center;
+body {
+    background-color: #f0f0f0; /* light gray background */
+    font-family: Arial, sans-serif;
 }
-.digge{
-  font-size: 70px;
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    margin: 0 auto;
 }
-a{
-    color:black;
-    text-decoration: none;
-    display: inline-block;
-    margin: 40px;
+
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 60vh;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    filter: grayscale(100%); /* convert video to black and white */
 }
-hr {
-    border: none; /* Убираем границу */
-    background-color: black; /* Цвет линии */
-    color: red; /* Цвет линии для IE6-7 */
-    height: 2px; /* Толщина линии */
-   }
+
+.overlay-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(6, 56, 82, 0.5); /* dark gray overlay */
+    width: 100%;
+    height: 60vh;
+    padding: 20px;
+    color: #fff;
+}
+
+h1, p {
+    color: #fff;
+}
